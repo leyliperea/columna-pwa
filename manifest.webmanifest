@@ -1,0 +1,43 @@
+{
+  "name": "Columna · Estimador de acero",
+  "short_name": "Columna",
+  "description": "Estimador preliminar de acero longitudinal y estribos para columnas.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+  "categories": ["utilities", "productivity", "education"],
+  "background_color": "#edf4f0",
+  "theme_color": "#153e36",
+  "lang": "es-MX",
+  "icons": [
+    {"src":"assets/icon-96.png","sizes":"96x96","type":"image/png"},
+    {"src":"assets/icon-128.png","sizes":"128x128","type":"image/png"},
+    {"src":"assets/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"assets/icon-256.png","sizes":"256x256","type":"image/png"},
+    {"src":"assets/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"assets/icon-maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+  ],
+  "screenshots": [
+    {"src":"assets/store-preview.png","sizes":"1280x720","type":"image/png","form_factor":"wide","label":"Calculadora de acero para columnas con resultados y widget"}
+  ],
+  "widgets": [
+    {
+      "name": "Resumen de columna",
+      "short_name": "Columna",
+      "description": "Muestra la cuantía y el material estimado de la última columna calculada.",
+      "tag": "columna-resumen",
+      "template": "columna-template",
+      "ms_ac_template": "widgets/column-template.json",
+      "data": "widgets/column-data.json",
+      "type": "application/json",
+      "multiple": false,
+      "auth": false,
+      "update": 86400,
+      "icons": [{"src":"assets/icon-96.png","sizes":"96x96","type":"image/png"}],
+      "screenshots": [{"src":"widgets/widget-preview.png","sizes":"600x400","type":"image/png","platform":"Windows","label":"Widget con el resumen del cálculo de una columna"}]
+    }
+  ]
+}

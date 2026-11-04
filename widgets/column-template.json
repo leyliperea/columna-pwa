@@ -1,0 +1,26 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {"type":"TextBlock","text":"COLUMNA","size":"Small","weight":"Bolder","color":"Accent","spacing":"None"},
+        {"type":"TextBlock","text":"${dimensions}","size":"ExtraLarge","weight":"Bolder","spacing":"Small"},
+        {"type":"TextBlock","text":"${reinforcement}","isSubtle":true,"spacing":"None"}
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "spacing": "Medium",
+      "columns": [
+        {"type":"Column","width":"stretch","items":[{"type":"TextBlock","text":"CUANTÍA","size":"Small","isSubtle":true},{"type":"TextBlock","text":"${ratio}","size":"Large","weight":"Bolder","color":"Accent","spacing":"None"}]},
+        {"type":"Column","width":"stretch","items":[{"type":"TextBlock","text":"ÁREA DE ACERO","size":"Small","isSubtle":true},{"type":"TextBlock","text":"${steelArea}","size":"Large","weight":"Bolder","spacing":"None"}]}
+      ]
+    },
+    {"type":"FactSet","spacing":"Medium","facts":[{"title":"Compra:","value":"${pieces}"},{"title":"Estado:","value":"${status}"}]}
+  ],
+  "actions": [{"type":"Action.Execute","title":"Abrir calculadora","verb":"open-calculator"}]
+}
