@@ -1,6 +1,6 @@
 {
-  "name": "Columna · Estimador de acero",
-  "short_name": "Columna",
+  "name": "Calculadora de Columnas",
+  "short_name": "Columnas",
   "description": "Estimador preliminar de acero longitudinal y estribos para columnas.",
   "id": "./",
   "start_url": "./index.html",
